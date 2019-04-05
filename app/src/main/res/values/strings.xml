@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ispexcamera</string>
+    <string name="action_settings">Settings</string>
+        <string name="take_picture">Take picture</string>
+    <string name="send_chars">Send hardware info</string>
+
+</resources>
