@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2015 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <nl.ddq.android.spectacle.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="305dp"
+        android:layout_height="419dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="106dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texture"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+
+        <ImageButton
+            android:id="@+id/info"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="69dp"
+            android:contentDescription="@string/description_info"
+            android:padding="20dp"
+            android:src="@drawable/ic_action_info" />
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/azimuth"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvTilt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="40dp"
+
+            android:text="@string/tilt"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvSunpos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="60dp"
+
+            android:text="@string/sun_position"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/picture"
+            android:layout_width="161dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="@string/picture"
+            android:textSize="18sp" />
+
+        <ToggleButton
+
+            android:layout_marginTop="80dp"
+            android:id="@+id/toggleBtnSky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:textOn="Sky"
+            android:textOff="Water" />
+
+
+
+        <ToggleButton
+
+            android:layout_marginTop="120dp"
+            android:id="@+id/toggleBtnhasiSPEX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:textOn="On"
+            android:textOff="Off" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Pointing to: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewiSPEX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:text="iSPEX: "
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvHoriz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+
+        android:text="@string/arrowleft"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/tvVert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="100dp"
+
+        android:text="@string/arrowup"
+        android:textSize="100sp" />
+
+
+    <TextView
+        android:id="@+id/textViewExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Exposure"
+        android:textSize="18sp" />
+
+
+    <SeekBar
+
+        android:layout_marginTop="280dp"
+        android:id="@+id/exposureSlider"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="50"/>
+
+</RelativeLayout>
